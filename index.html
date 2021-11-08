@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input{
+            background-color:greenyellow;
+            width: 25vw;
+             margin-top: 20px;
+              height: 40px;
+               font-size: 1.5em;
+                padding-top: 8px;
+                border-radius: 10px;
+                margin-left: 40%;
+                padding-left: 10px;
+                
+        }
+        #btn{
+            margin-left: 50%;
+            margin-top: 60px;
+            background-color: aqua;
+            height: 60px;
+            width: 100px;
+            border-style: none;
+            box-shadow: 2px 2px 2px 2px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2 id="input"></h2>
+        </h2>
+        <button id="btn" onclick="update()">Click Me</button>
+    </div>
+    <script>
+function update(){
+    var name = prompt("Enter your name", "Vaishali");
+    document.getElementById('input').innerText = "Hey my name is,  " + name;
+}
+    </script>
+</body>
+</html>
